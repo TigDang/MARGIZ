@@ -139,19 +139,17 @@ a{
 .textblock{
   text-align: justify;
   display: block;
-  padding: 4vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding: 1vh 4vh;
   border-color: #222222;
   border-width: 10px;
   border-radius: 10vh;
-  width: 200px;
+  width: 40vw;
 }
 
 #contactsblock{
   position: absolute;
-  right: 150px;
-  top: 0px;
+  right: 400px;
+  top: 0;
 }
 
 #contactsblock svg{
@@ -162,6 +160,11 @@ a{
   animation: 1.2s ease-in-out 0s normal none infinite running shaking;
 }
 
+#contactsblock{
+  position: fixed;
+  right: 15px;
+  top: 100px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -250,9 +253,7 @@ a{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media (max-width: 768px){
   .textblock{
     text-align: justify;
     display: block;
@@ -264,21 +265,15 @@ a{
     border-radius: 10vh;
   }
 }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
-  .textblock{
-    display: block;
-    margin: 1vh;
-    padding: 1vh;
-    border-color: #222222;
-    border-width: 10px;
-    border-radius: 10vh;
-    width: 40vw;
-  }
 }
 
 /* ==========================================================================
