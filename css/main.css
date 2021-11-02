@@ -90,29 +90,40 @@ textarea {
   font-family: "Open Sans";
   font-weight: 1;
 }
+
+body{
+  background: #98FAFF;
+}
+
 H1{
   font-size: xxx-large;
 }
+
 H1, H2, H3, H4{
   margin: 0vh;
   padding: 0vh;
 }
+
+a{
+  text-decoration: none;
+}
+
 #header{
   height: 100px;
   padding: 2vh;
   background: #9FCEFF;
 }
-body{
-  background: #98FAFF;
-}
+
 #logo{
   position: fixed;
   right: 1vw;
   top: 3vh;
 }
+
 #logo:hover {
   animation: 1.2s ease-in-out 0s normal none infinite running shaking;
 }
+
 @keyframes shaking {
   0%, 50%, 100% {
     transform: rotate(0deg);
@@ -134,7 +145,7 @@ body{
   border-color: #222222;
   border-width: 10px;
   border-radius: 10vh;
-  width: 40vw;
+  width: 200px;
 }
 
 #contactsblock{
@@ -152,9 +163,6 @@ body{
 }
 
 
-a{
-  text-decoration: none;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -245,6 +253,16 @@ a{
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  .textblock{
+    text-align: justify;
+    display: block;
+    padding: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-color: #222222;
+    border-width: 10px;
+    border-radius: 10vh;
+  }
 }
 
 @media print,
