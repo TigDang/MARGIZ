@@ -86,10 +86,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+  font-family: "Open Sans";
+}
 #header{
-  background: #b3d4fc;
   width: 100vw;
   height: 10vh;
+  padding: 2vh;
+  background: #9FCEFF;
+}
+H1{
+  margin: 0vh;
+  padding: 0vh;
+  font-weight: 1;
+  font-size: xxx-large;
+  background: #9FCEFF;
+  display: inline;
+}
+body{
+  background: #98FAFF;
+}
+#logo{
+  position: fixed;
+  right: 1vw;
+  top: 3vh;
+}
+.textblock{
+  margin: 1vh;
+  padding: 1vh;
+  border-color: #222222;
+  border-width: 10px;
+  border-radius: 10vh;
 }
 /* ==========================================================================
    Helper classes
@@ -264,4 +291,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
