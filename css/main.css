@@ -140,10 +140,7 @@ a{
   text-align: justify;
   display: block;
   padding: 1vh 4vh;
-  border-color: #222222;
-  border-width: 10px;
-  border-radius: 10vh;
-  width: 40vw;
+  width: 800px;
 }
 
 #contactsblock{
@@ -253,16 +250,10 @@ a{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media (max-width: 768px){
+@media screen and (-webkit-device-pixel-ratio:3){
   .textblock{
     text-align: justify;
-    display: block;
-    padding: 4vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-color: #222222;
-    border-width: 10px;
-    border-radius: 10vh;
+    right: 10px;
   }
 }
 @media only screen and (min-width: 35em) {
