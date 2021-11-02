@@ -124,6 +124,7 @@ body{
     transform: rotate(10deg);
   }
 }
+
 .textblock{
   display: block;
   margin: 1vh;
@@ -230,6 +231,15 @@ body{
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
+  .textblock{
+    display: block;
+    margin: 1vh;
+    padding: 1vh;
+    border-color: #222222;
+    border-width: 10px;
+    border-radius: 10vh;
+    width: 40vw;
+  }
 }
 
 /* ==========================================================================
