@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*
-https://colorscheme.ru/#3j51Hd0--xnnq
+https://colorscheme.ru/#3j51H5b--v5Oo
 */
 
 *{
@@ -96,16 +96,20 @@ https://colorscheme.ru/#3j51Hd0--xnnq
 }
 
 body{
-  background: #98FAFF;
+  background: #D6FFEB;
 }
 
 H1{
-  font-size: xxx-large;
+  font-size: xx-large;
 }
 
 H1, H2, H3, H4{
   margin: 0;
   padding: 0;
+}
+
+hr{
+  color: black;
 }
 
 a{
@@ -115,7 +119,7 @@ a{
 #header{
   height: 100px;
   padding: 2vh;
-  background: #9FCEFF;
+  background: #49A4A8;
 }
 
 #logo{
@@ -123,6 +127,10 @@ a{
   right: 2vw;
   top: 1vh;
   z-index: 2500;
+}
+
+a {
+  text-decoration: none;
 }
 
 #logo:hover {
@@ -167,7 +175,12 @@ a{
   right: 150px;
   top: 15px;
 }
-
+li {
+  list-style-type: none; /* Убираем маркеры у списка */
+}
+li:before {
+  content: "> "; /* Добавляем в качестве маркера символ */
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
