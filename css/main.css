@@ -139,8 +139,8 @@ a{
 .textblock{
   text-align: justify;
   display: inline-block;
-  padding: 1vh 4vh;
-  width: 800px;
+  padding: 1vh 100px 1vh 4vh;
+  width: auto;
 }
 
 #contactsblock{
@@ -250,18 +250,18 @@ a{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (-webkit-device-pixel-ratio:3){
-  .textblock{
-    text-align: justify;
-    display: block;
-    padding: 1vh 4vh;
-    width: auto;
-    font-size: large;
-  }
-  #logo:hover {
-
-  }
-}
+/*@media (min-width: 576px) {*/
+/*  .textblock{*/
+/*    text-align: justify;*/
+/*    display: block;*/
+/*    padding: 1vh 4vh;*/
+/*    width: auto;*/
+/*    font-size: large;*/
+/*  }*/
+/*  #logo:hover {*/
+/*  animation: none;*/
+/*  }*/
+/*}*/
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
