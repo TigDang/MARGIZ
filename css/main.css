@@ -7,6 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 @import "right-nav-style.css";
+@import "forMobiles.css";
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -46,7 +48,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #7F9EC6;
   margin: 1em 0;
   padding: 0;
 }
@@ -93,132 +95,156 @@ https://colorscheme.ru/#3j51H00--nMTS
 https://colorscheme.ru/#3J61Zag--k.G9
 https://colorscheme.ru/#3D51S1T--k.G9
 */
-
-*{
-  font-family: "Open Sans";
-  font-weight: 1;
-}
-
-body{
-  background: #FFFFFF;
-}
-
-H1{
-  font-size: xx-large;
-}
-#header h1{
-  color: #7F9EC6; !important;
-  font-weight: bold;
-  background: #FFFFFF
-}
-
-#header h1:hover{
-  font-weight: bold;
-  animation: textAnimColor infinite 2s linear;
-}
-
-@keyframes textAnimColor {
-  0% {
-    color: #7F9EC6;
+@media (min-width: 768px)  {
+  *{
+    font-family: "Open Sans";
+    font-weight: 1;
   }
-  50%{
-    color: #000000;
+
+  body{
+    background: #FFFFFF;
   }
-  100% {
-    color: #7F9EC6;
+
+  H1{
+    font-size: xx-large;
+  }
+  #header h1{
+    color: #7F9EC6; !important;
+    font-weight: bold;
+    background: #FFFFFF
+  }
+
+  #header h1:hover{
+    font-weight: bold;
+    animation: textAnimColor infinite 2s linear;
+  }
+
+  @keyframes textAnimColor {
+    0% {
+      color: #7F9EC6;
+    }
+    50%{
+      color: #000000;
+    }
+    100% {
+      color: #7F9EC6;
+    }
+  }
+
+
+  H1, H2, H3, H4, H5, H6{
+    margin: 0;
+    padding: 0;
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+  }
+  .textblock img{
+    display: inline;
+    alignment: center;
+    width: 400px;
+  }
+  hr{
+    color: black;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #header{
+    height: 100px;
+    padding: 2vh;
+    background: #7F9EC6;
+  }
+
+  #logo{
+    position: absolute;
+    right: 2vw;
+    top: 1vh;
+    z-index: 2500;
+    width: 100px;
+    height: 100px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #logo:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running shaking;
+  }
+
+  @keyframes shaking {
+    0%, 50%, 100% {
+      transform: rotate(0deg);
+    }
+    10%, 30% {
+      transform: rotate(-10deg);
+    }
+    20%, 40% {
+      transform: rotate(10deg);
+    }
+  }
+
+  .textblock{
+    float: left;
+    text-align: justify;
+    display: inline-block;
+    margin: 1vh 50px 1vh 4vh;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #7F9EC6;
+    border-radius: 5px;
+    background-color: #F1F7FF;
+  }
+
+  .contents{
+    float: left;
+    text-align: justify;
+    display: inline-block;
+    margin: 1vh 50px 1vh 4vh;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #7F9EC6;
+    border-radius: 5px;
+    background-color: #F1F7FF;
+    float: left;
+  }
+
+  #contactsblock{
+    position: absolute;
+    right: 40px;
+    top: 15px;
+  }
+
+  #contactsblock svg{
+    display: block;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+  }
+
+  #contactsblock svg:hover{
+    animation: 1.2s ease-in-out 0s normal none infinite running shaking;
+  }
+
+  li {
+    list-style-type: none; /* Убираем маркеры у списка */
+  }
+  li:before {
+    content: "> "; /* Добавляем в качестве маркера символ */
+  }
+  .took{
+    font-weight: bold;
+    color: white;
+  }
+  #mobLabel{
+    opacity: 0;
   }
 }
 
 
-H1, H2, H3, H4, H5, H6{
-  margin: 0;
-  padding: 0;
-  text-indent: 20px; /* Отступ первой строки в пикселах */
-}
-.textblock img{
-  display: inline;
-  alignment: center;
-  width: 400px;
-}
-hr{
-  color: black;
-}
-
-a{
-  text-decoration: none;
-}
-
-#header{
-  height: 100px;
-  padding: 2vh;
-  background: #7F9EC6;
-}
-
-#logo{
-  position: absolute;
-  right: 2vw;
-  top: 1vh;
-  z-index: 2500;
-}
-
-a {
-  text-decoration: none;
-}
-
-#logo:hover {
-  animation: 1.2s ease-in-out 0s normal none infinite running shaking;
-}
-
-@keyframes shaking {
-  0%, 50%, 100% {
-    transform: rotate(0deg);
-  }
-  10%, 30% {
-    transform: rotate(-10deg);
-  }
-  20%, 40% {
-    transform: rotate(10deg);
-  }
-}
-
-.textblock{
-  text-align: justify;
-  display: inline-block;
-  margin: 1vh 150px 1vh 4vh;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  width: auto;
-  border: 1px solid #7F9EC6;
-  border-radius: 5px;
-  background-color: #F1F7FF;
-}
-
-#contactsblock{
-  position: absolute;
-  right: 40px;
-  top: 15px;
-}
-
-#contactsblock svg{
-  display: inline;
-  margin: 3px;
-}
-
-#contactsblock svg:hover{
-  animation: 1.2s ease-in-out 0s normal none infinite running shaking;
-}
-
-li {
-  list-style-type: none; /* Убираем маркеры у списка */
-}
-li:before {
-  content: "> "; /* Добавляем в качестве маркера символ */
-}
-.took{
-  font-weight: bold;
-  color: white;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -319,9 +345,7 @@ li:before {
 /*  }*/
 /*}*/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
