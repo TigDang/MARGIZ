@@ -79,6 +79,11 @@
     border-radius: 5px;
     background-color: #F1F7FF;
   }
+
+  .textblock h2{
+    margin-top: 5px;
+  }
+
   .contents{
     float: left;
     text-align: justify;

@@ -150,9 +150,6 @@ https://colorscheme.ru/#3D51S1T--k.G9
     color: black;
   }
 
-  a{
-    text-decoration: none;
-  }
 
   #header{
     height: 100px;
@@ -171,6 +168,10 @@ https://colorscheme.ru/#3D51S1T--k.G9
 
   a {
     text-decoration: none;
+  }
+  .contents a{
+    text-decoration: none;
+    color: black;
   }
 
   #logo:hover {
@@ -200,6 +201,10 @@ https://colorscheme.ru/#3D51S1T--k.G9
     border: 1px solid #7F9EC6;
     border-radius: 5px;
     background-color: #F1F7FF;
+  }
+
+  .textblock h2{
+    margin-top: 8px;
   }
 
   .contents{

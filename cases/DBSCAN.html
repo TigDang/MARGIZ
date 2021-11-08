@@ -44,10 +44,6 @@
   <ul>
     <li><a href="../index.html">Main page</a>
     <li class="took"><a  href="">DBSCAN_project</a>
-    <li><a href="#4">Четыре</a>
-    <li><a href="#5">Пять</a>
-    <li><a href="#6">Шесть</a>
-    <li><a href="#7">Семь</a>
   </ul>
 </nav>
 <div class="contents">
@@ -56,8 +52,9 @@
   </H1>
   <h2>
     <ul>
-      <li><a href="#4">Formulation of the problem</a>
-      <li><a href="#5">Tool selection</a>
+      <li><a href="#intro">Introduction</a>
+      <li><a href="#formProbl">Formulation of the problem</a>
+      <li><a href="#toolSel">Tool selection</a>
       <li><a href="#4">Три</a>
       <li><a href="#4">Четыре</a>
       <li><a href="#5">Пять</a>
@@ -66,7 +63,88 @@
     </ul>
   </h2>
 </div>
-<div class="textblock">
+<div id="intro" class="textblock">
+  <H1>
+    > Introduction
+  </H1>
+  <h2>
+    Cluster analysis is a relevant area of modern
+    information technologies. The range of applications is very wide - algorithms
+    clustering have found their application in medicine, biology, chemistry, archeology,
+    economy. In applied statistics, multivariate statistical methods have not been used for a long time.
+    could be used due to the lack of computers for processing large
+    data arrays. These methods began to develop actively from the second half of the twentieth century. at
+    the emergence of high-speed computers that perform in a split second
+    the necessary calculations, which previously took days, weeks, months. At present
+    time an obstacle to the widespread use of multivariate statistical methods, in
+    including cluster analysis, is the lack of skills and abilities among researchers
+    work with statistical software packages.
+  </h2>
+  <h2>
+    The essence of clustering is to select among a number of
+    objects of a group of objects (clusters), united according to the principle of similarity within
+    selected features. Objects can be inanimate objects, living organisms
+    or processes. The choice of classification criteria is determined by the conditions of the problem - that is,
+    from the needs of the researcher.
+  </h2>
+  <h2>
+    If clustering objects are represented as points in n-dimensional space
+    features (n is the number of features by which the taxonomy passes), then the similarity
+    between objects is defined through the concept of distance between points, since
+    it is intuitively clear that the smaller the distance between objects, the more similar they are.
+    From this it is clear that for the "space" of the selected features the function should be given
+    distances, so that, relying on it, it would be possible to automatically separate
+    some groups of objects from others.
+  </h2>
+  <h2>
+    As a rule, to solve the problem of cluster analysis, it is enough to use
+    one of the following distance functions (metrics):
+    <ul>
+      <li>Euclidean distance, the most popular metric, is
+        geometric distance in multidimensional space. This
+        metric, like most others, is sensitive to unit changes
+        measuring axes. For example, if you convert centimeters to millimeters, then
+        the calculated distance will also change. Therefore, when using
+        of most metrics, cluster analysis assumes preliminary
+        standardization of source data.</li>
+      <li>Manhattan distance of city blocks - sum of modules of differences
+        coordinates of two points.</li>
+      <li>Chebyshev distance is the maximum modulus of the difference between the components of two points</li>
+    </ul>
+  </h2>
+  <h2>
+    There are many algorithms for clustering data. They are convenient
+    divided into the following groups:
+    <ul>
+      <li>Connectivity Models: Clustering builds models based on distance.</li>
+      <li>MCenter of gravity models: k-means algorithm represents each cluster
+        one vector of the mean.</li>
+      <li>Distribution models: clusters are modeled using
+        statistical distributions such as multivariate normal
+        distributions used by the expectation maximization algorithm.</li>
+      <li>Density models: DBSCAN and OPTICS define clusters as related
+        dense areas in data space.</li>
+    </ul>
+  </h2>
+  <h2>
+    Among other methods, DBSCAN (Density-based spatial clustering of applications with noise, DBSCAN) is firmly entrenched in practice.
+    data suggested by Maritin Esther, Hans-Peter Kriegel, Jörg Sander and Xiaowei
+    Su in 1996. This is the clustering algorithm, as written above, based on density - given
+    a set of points in some space, the algorithm groups together points that are closely
+    are located (points with many close neighbors), marking as noise the points that
+    are lonely in areas of low density (whose nearest neighbors lie
+    far). It is important to note that DBSCAN can be used with any function.
+    distance, which makes it very versatile.
+  </h2>
+  <h2>
+    DBSCAN is one of the most commonly used algorithms
+    clustering, and is most often mentioned in the scientific literature. In 2014 the algorithm
+    received the "time-tested" award (the award is given to algorithms that have received
+    significant attention in theory and practice) at the leading conference on
+    data mining.
+  </h2>
+</div>
+<div id="formProbl" class="textblock">
   <H1>
     > Formulation of the problem
   </H1>
@@ -80,7 +158,7 @@
   <img style="margin: 10px" src="../img/dbscan_testpic1.png">
 </div>
 <hr/>
-<div class="textblock">
+<div id="toolSel" class="textblock">
   <H1>
     > Tool selection
   </H1>
@@ -99,7 +177,7 @@
 </div>
 <footer>
   <div class="footerText">
-    Gizetdinov Marat, 2021 || ver 2.2 <span id="mobLabel">mobile</span>
+    Gizetdinov Marat, 2021 || ver 2.3 <span id="mobLabel">mobile</span>
     <br/>
     Polytech university
   </div>
