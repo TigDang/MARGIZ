@@ -115,7 +115,7 @@ H1, H2, H3, H4, H5, H6{
 .textblock img{
   display: inline;
   alignment: center;
-  width: 10vw;
+  width: 400px;
 }
 hr{
   color: black;
@@ -161,8 +161,13 @@ a {
 .textblock{
   text-align: justify;
   display: inline-block;
-  padding: 1vh 100px 1vh 4vh;
+  margin: 1vh 150px 1vh 4vh;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   width: auto;
+  border: 1px solid darkslategrey;
+  border-radius: 5px;
 }
 
 #contactsblock{
