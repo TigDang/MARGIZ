@@ -89,6 +89,9 @@ textarea {
    ========================================================================== */
 /*
 https://colorscheme.ru/#3j51H5b--v5Oo
+https://colorscheme.ru/#3j51H00--nMTS
+https://colorscheme.ru/#3J61Zag--k.G9
+https://colorscheme.ru/#3D51S1T--k.G9
 */
 
 *{
@@ -97,15 +100,35 @@ https://colorscheme.ru/#3j51H5b--v5Oo
 }
 
 body{
-  background: #D6FFEB;
+  background: #FFFFFF;
 }
 
 H1{
   font-size: xx-large;
 }
 #header h1{
-  color: #2d7b80; !important;
+  color: #7F9EC6; !important;
+  font-weight: bold;
+  background: #FFFFFF
 }
+
+#header h1:hover{
+  font-weight: bold;
+  animation: textAnimColor infinite 2s linear;
+}
+
+@keyframes textAnimColor {
+  0% {
+    color: #7F9EC6;
+  }
+  50%{
+    color: #000000;
+  }
+  100% {
+    color: #7F9EC6;
+  }
+}
+
 
 H1, H2, H3, H4, H5, H6{
   margin: 0;
@@ -128,7 +151,7 @@ a{
 #header{
   height: 100px;
   padding: 2vh;
-  background: #49A4A8;
+  background: #7F9EC6;
 }
 
 #logo{
@@ -166,8 +189,9 @@ a {
   padding-left: 10px;
   padding-bottom: 10px;
   width: auto;
-  border: 1px solid darkslategrey;
+  border: 1px solid #7F9EC6;
   border-radius: 5px;
+  background-color: #F1F7FF;
 }
 
 #contactsblock{

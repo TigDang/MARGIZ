@@ -24,7 +24,7 @@
     -moz-transition: right 0.3s;
     transition: right 0.3s;
     /* определяем цвет фона панели */
-    background: #4A78A8;
+    background: #877FC6;
     /* поверх других элементов */
     z-index: 2000;
     /* прозрачность */
