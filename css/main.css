@@ -119,6 +119,10 @@ https://colorscheme.ru/#3D51S1T--k.G9
     animation: textAnimColor infinite 2s linear;
   }
 
+  #header h5{
+    font-size: medium;
+  }
+
   @keyframes textAnimColor {
     0% {
       color: #7F9EC6;
@@ -241,6 +245,20 @@ https://colorscheme.ru/#3D51S1T--k.G9
   }
   #mobLabel{
     opacity: 0;
+  }
+  footer{
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    margin-top: 50vh;
+    background-color: #7F9EC6;
+    width: 100vw;
+    border-top: #40506b solid 1px;
+  }
+  .footerText{
+    margin-left: 35px;
+    margin-top: 15px;
+    color: #40506b;
   }
 }
 

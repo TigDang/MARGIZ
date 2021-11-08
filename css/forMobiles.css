@@ -20,7 +20,7 @@
     background: #FFFFFF
   }
   #header h5{
-    font-size: small;
+    font-size: medium;
     display: inline-block;
     margin-right: 12vw;
     text-indent: 0;
@@ -121,5 +121,20 @@
   }
   #mobLabel{
     opacity: 1;
+  }
+  footer{
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    margin-top: 50vh;
+    background-color: #7F9EC6;
+    width: 100vw;
+    border-top: #40506b solid 1px;
+  }
+  .footerText{
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #40506b;
+    text-align: center
   }
 }
