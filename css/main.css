@@ -18,6 +18,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -218,7 +219,15 @@ https://colorscheme.ru/#3D51S1T--k.G9
     border: 1px solid #7F9EC6;
     border-radius: 5px;
     background-color: #F1F7FF;
-    float: left;
+  }
+
+  .contents li{
+    transition: 0.5s ease-in-out;
+  }
+  .contents li:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1, 1.1);
+    font-weight: bold;
   }
 
   #contactsblock{
