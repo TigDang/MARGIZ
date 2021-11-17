@@ -96,6 +96,11 @@ https://colorscheme.ru/#3j51H00--nMTS
 https://colorscheme.ru/#3J61Zag--k.G9
 https://colorscheme.ru/#3D51S1T--k.G9
 */
+body {
+  border: #7F9EC6 1px solid;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
 @media (min-width: 768px)  {
   *{
     font-family: "Open Sans";
